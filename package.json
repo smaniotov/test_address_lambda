@@ -1,0 +1,21 @@
+{
+  "name": "mx-postal-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.239.1",
+    "git-hooks": "^1.1.10",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "request": "^2.86.0"
+  }
+}

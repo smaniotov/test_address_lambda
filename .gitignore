@@ -1,0 +1,11 @@
+# Ignore all dotfiles...
+.*
+
+# Except for
+!.gitignore
+!.editorconfig
+!.storybook
+!.npmrc
+
+#Ignore
+node_modules/
