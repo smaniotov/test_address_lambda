@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "linter": "standard --fix",
+    "zip": "rm -f mx-postal-code.zip; rm -rf node_modules/; mkdir node_modules; npm i --production; zip -rMM9 mx-postal-code src/main node_modules; npm i",
+    "lambda": "npm run zip; aws lambda update-function-code --function-name mx-postalcode --zip-file fileb://mx-postal-code.zip"
   },
   "keywords": [],
   "author": "",
